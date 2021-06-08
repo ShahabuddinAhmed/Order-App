@@ -1,0 +1,15 @@
+# Development image not for production
+FROM node:12-slim
+
+WORKDIR /server
+
+#COPY package.json .
+RUN  apt-get update && apt-get -y install procps
+RUN yarn install
+
+#COPY . /server
+
+EXPOSE 1500
+CMD [ "yarn", "start:dev" ]
+
+#ENTRYPOINT ["node dist/main.js"]
