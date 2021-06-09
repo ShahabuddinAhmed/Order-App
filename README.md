@@ -2,36 +2,46 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+## Installation with Docker
+
+1. Clone from git
+
+2. cd into food-order
+
+run `yarn install` to install all dependencies
+
+3. run `dokcer-compose up` to start the development server with all dependencies
+
 ## Installation
 
 ```bash
-$ npm install
+$ yarn install
 ```
 
 ## Running the app
 
 ```bash
 # development
-$ npm run start
+$ yarn start
 
 # watch mode
-$ npm run start:dev
+$ yarn start:dev
 
 # production mode
-$ npm run start:prod
+$ yarn start:prod
 ```
 
 ## Test
 
 ```bash
 # unit tests
-$ npm run test
+$ yarn test
 
 # e2e tests
-$ npm run test:e2e
+$ yarn test:e2e
 
 # test coverage
-$ npm run test:cov
+$ yarn test:cov
 ```
 
 ## Support
